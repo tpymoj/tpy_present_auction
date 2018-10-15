@@ -1193,11 +1193,16 @@ var auction_items = [
     }
   ];
 
-  var slideContent = "---\n";
-  auction_items.forEach(function(item){
-    slideContent += '#' + item.item_number + '.' + '     ' + item.item_name + '\n';
+  var slideContent = "class: promo center middle\n![TPYMOJ Logo](img/tpymoj-qr.svg)\n# #掌握最新法拍消息\n##facebook.com/tpymoj\n---\nclass: center middle opening\n![TPYMOJ Logo](img/logo-85.png)\n#107檢助執字1號拍賣\n---\n";
+  auction_items.forEach(function(item, index){
+    slideContent += 'class: auction-theme\n';
+    slideContent += 'background-image: url(img/10232018_' + item.item_number + '.JPG)\n';
+    slideContent += '## #' + item.item_number + '\n';
+    slideContent += '### 底價 $' + item.starting_bid + '\n';
+    slideContent += '#### ' + item.item_name + ' / ' + item.item_description + ' / ' + item.quantity + item.unit + '\n';
     slideContent += '---\n'
   });
+  slideContent += "class: center middle closing\n#107檢助執字1號拍賣\n##拍賣結束\n";
 
   $('document').ready(function(){
     $('#source').text(slideContent);
