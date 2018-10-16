@@ -1193,19 +1193,50 @@ var auction_items = [
     }
   ];
 
-  var slideContent = "class: promo center middle\n![TPYMOJ Logo](img/tpymoj-qr.svg)\n# #掌握最新法拍消息\n##facebook.com/tpymoj\n---\nclass: center middle opening\n![TPYMOJ Logo](img/logo-85.png)\n#107檢助執字1號拍賣\n---\n";
+var promoSlide = `
+  <section class="promo">
+    <img src="img/tpymoj-qr.svg" />
+    <h1>#掌握最新法拍消息</h1>
+    <h2>facebook.com/tpymoj</h2>
+  </section>
+  `;
+
+  var openingSlide = `
+    <section class="opening">
+      <img src="img/logo-85.png" />
+      <h1>107檢助執字1號拍賣</h1>
+    </section>
+  `;
+
+  var closingSlide = `
+  <section class="closing">
+    <h1>107檢助執字1號拍賣</h1>
+    <h2>拍賣結束</h2>
+  </section>
+`;
+
+var contentSlides = '';
+
+  // var slideContent = "class: promo center middle\n![TPYMOJ Logo](img/tpymoj-qr.svg)\n# #掌握最新法拍消息\n##facebook.com/tpymoj\n---\nclass: center middle opening\n![TPYMOJ Logo](img/logo-85.png)\n#107檢助執字1號拍賣\n---\n";
   auction_items.forEach(function(item, index){
-    slideContent += 'class: auction-theme\n';
-    slideContent += 'background-image: url(img/10232018_' + item.item_number + '.JPG)\n';
-    slideContent += '## #' + item.item_number + '\n';
-    slideContent += '### 底價 $' + item.starting_bid + '\n';
-    slideContent += '#### ' + item.item_name + ' / ' + item.item_description + ' / ' + item.quantity + item.unit + '\n';
-    slideContent += '---\n'
+    contentSlides += `
+    <section class="auction-theme" style="background-image: url(img/10232018_${item.item_number}.JPG)">
+      <h2>${item.item_number}</h2>
+      <h3>底價 $${item.starting_bid})</h3>
+      <h4>${item.item_name} / ${item.item_description} / ${item.quantity} ${item.unit}</h4>
+    </section>
+    `;
+  //   slideContent += 'class: auction-theme\n';
+  //   slideContent += 'background-image: url(img/10232018_' + item.item_number + '.JPG)\n';
+  //   slideContent += '## #' + item.item_number + '\n';
+  //   slideContent += '### 底價 $' + item.starting_bid + '\n';
+  //   slideContent += '#### ' + item.item_name + ' / ' + item.item_description + ' / ' + item.quantity + item.unit + '\n';
+  //   slideContent += '---\n'
   });
-  slideContent += "class: center middle closing\n#107檢助執字1號拍賣\n##拍賣結束\n";
+  // slideContent += "class: center middle closing\n#107檢助執字1號拍賣\n##拍賣結束\n";
 
   $('document').ready(function(){
-    $('#source').text(slideContent);
-    var slideshow = remark.create();
+    $('.slides').html(promoSlide + openingSlide + contentSlides + closingSlide);
+    Reveal.initialize();
   })
 
