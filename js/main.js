@@ -1222,7 +1222,7 @@ var contentSlides = '';
     contentSlides += `
     <section class="auction-theme" style="background-image: url(img/10232018_${item.item_number}.JPG)">
       <h2>${item.item_number}</h2>
-      <h3>底價 $${item.starting_bid})</h3>
+      <h3>底價 $${item.starting_bid}</h3>
       <h4>${item.item_name} / ${item.item_description} / ${item.quantity} ${item.unit}</h4>&nbsp;
     </section>
     `;

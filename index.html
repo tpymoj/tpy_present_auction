@@ -5,7 +5,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reveal/reveal.css">
     <link rel="stylesheet" href="css/reveal/theme/white.css">
-    <!-- <link rel="stylesheet" href="css/reveal/print/pdf.css"> -->
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/reveal/print/pdf.css' : 'css/reveal/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
