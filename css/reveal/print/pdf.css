@@ -89,6 +89,11 @@ ul, ol, div, p {
 	display: block !important;
 	position: absolute !important;
 
+	width: 1024px;
+	height: 1024px;
+
+	background-repeat: no-repeat;
+
 	margin: 0 !important;
 	padding: 0 !important;
 	box-sizing: border-box !important;
@@ -151,7 +156,7 @@ ul, ol, div, p {
 	position: relative;
 	color: inherit;
 	background-color: transparent;
-	padding: 20px;
+	padding: 0px;
 	page-break-after: always;
 	border: 0;
 }

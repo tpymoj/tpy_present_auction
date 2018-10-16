@@ -4,21 +4,48 @@
     <title>行政執行署 台北分署 拍賣投影片</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reveal/reveal.css">
-		<link rel="stylesheet" href="css/reveal/theme/white.css">
+    <link rel="stylesheet" href="css/reveal/theme/white.css">
+    <!-- <link rel="stylesheet" href="css/reveal/print/pdf.css"> -->
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
+      body { font-family: 'Noto Sans TC', sans-serif; }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
       .remark-slide-number {
         display: none;
+      }
+
+      .slides > section {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 0 !important;
+      }
+
+      img {
+        border: none !important;
+      }
+
+      .promo {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
+
+      .reveal section.promo img {
+        margin-top: 70px;
+        margin-bottom: 30px;
+      }
+
+      .reveal section img {
+        box-shadow: none;
+      }
+
+      .promo h1 {
+        font-size: 55px;
+        margin-bottom: 42px;
       }
 
       .promo h2 {
@@ -28,6 +55,7 @@
         text-align: center;
         padding: 15px 36px;
         border-radius: 50px;
+        font-size: 45px;
       }
 
       .opening img {
@@ -39,7 +67,6 @@
         background-color: rgb(30,30,30);
         padding: 10px 20px;
         box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
-        margin-top: 0;   
         color: white;     
         display: inline;
       }
@@ -51,6 +78,10 @@
 
       .closing {
         background-color: rgb(30,30,30);
+        color: white;
+      }
+
+      .closing h1 {
         color: white;
       }
 

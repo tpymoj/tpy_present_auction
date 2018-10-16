@@ -1197,21 +1197,21 @@ var promoSlide = `
   <section class="promo">
     <img src="img/tpymoj-qr.svg" />
     <h1>#掌握最新法拍消息</h1>
-    <h2>facebook.com/tpymoj</h2>
+    <h2>facebook.com/tpymoj</h2>&nbsp;
   </section>
   `;
 
   var openingSlide = `
     <section class="opening">
       <img src="img/logo-85.png" />
-      <h1>107檢助執字1號拍賣</h1>
+      <h1>107檢助執字1號拍賣</h1>&nbsp;
     </section>
   `;
 
   var closingSlide = `
   <section class="closing">
     <h1>107檢助執字1號拍賣</h1>
-    <h2>拍賣結束</h2>
+    <h2>拍賣結束</h2>&nbsp;
   </section>
 `;
 
@@ -1223,7 +1223,7 @@ var contentSlides = '';
     <section class="auction-theme" style="background-image: url(img/10232018_${item.item_number}.JPG)">
       <h2>${item.item_number}</h2>
       <h3>底價 $${item.starting_bid})</h3>
-      <h4>${item.item_name} / ${item.item_description} / ${item.quantity} ${item.unit}</h4>
+      <h4>${item.item_name} / ${item.item_description} / ${item.quantity} ${item.unit}</h4>&nbsp;
     </section>
     `;
   //   slideContent += 'class: auction-theme\n';
