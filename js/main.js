@@ -1193,39 +1193,35 @@ var auction_items = [
     }
   ];
 
-var promoSlide = `
-  <section class="promo" data-transition="none">
-    <img src="img/tpymoj-qr.svg" />
-    <h1>#掌握最新法拍消息</h1>
-    <h2>facebook.com/tpymoj</h2>&nbsp;
-  </section>
-  `;
+var promoSlide = 
+  '<section class="promo" data-transition="none">' +
+    '<img src="img/tpymoj-qr.svg" />' +
+    '<h1>#掌握最新法拍消息</h1>' +
+    '<h2>facebook.com/tpymoj</h2>&nbsp;' +
+  '</section>';
 
-  var openingSlide = `
-    <section class="opening" data-transition="none">
-      <img src="img/logo-85.png" /> <br/>
-      <h1>107檢助執字1號拍賣</h1>&nbsp;
-    </section>
-  `;
+  var openingSlide = 
+    '<section class="opening" data-transition="none">' +
+      '<img src="img/logo-85.png" /> <br/>' +
+      '<h1>107檢助執字1號拍賣</h1>&nbsp;' +
+    '</section>';
 
-  var closingSlide = `
-  <section class="closing" data-transition="none">
-    <h1>107檢助執字1號拍賣</h1>
-    <h2>拍賣結束</h2>&nbsp;
-  </section>
-`;
+  var closingSlide = 
+  '<section class="closing" data-transition="none">' +
+    '<h1>107檢助執字1號拍賣</h1>' +
+    '<h2>拍賣結束</h2>&nbsp;' +
+  '</section>';
 
 var contentSlides = '';
 
   // var slideContent = "class: promo center middle\n![TPYMOJ Logo](img/tpymoj-qr.svg)\n# #掌握最新法拍消息\n##facebook.com/tpymoj\n---\nclass: center middle opening\n![TPYMOJ Logo](img/logo-85.png)\n#107檢助執字1號拍賣\n---\n";
   auction_items.forEach(function(item, index){
-    contentSlides += `
-    <section class="auction-theme" style="background-image: url(img/10232018_${item.item_number}.JPG)" data-transition="none">
-      <h2>#${item.item_number}</h2>
-      <h3>底價 $${item.starting_bid}</h3>
-      <h4>${item.item_name} / ${item.item_description} / ${item.quantity} ${item.unit}</h4>&nbsp;
-    </section>
-    `;
+    contentSlides += 
+    '<section class="auction-theme" style="background-image: url(img/10232018_' + item.item_number + '.JPG)" data-transition="none">' +
+      '<h2>#' + item.item_number + '</h2>' +
+      '<h3>底價 $' + item.starting_bid + '</h3>' +
+      '<h4>' + item.item_name + ' / ' + item.item_description + ' / ' + item.quantity + item.unit + '</h4>&nbsp;' +
+    '</section>';
   //   slideContent += 'class: auction-theme\n';
   //   slideContent += 'background-image: url(img/10232018_' + item.item_number + '.JPG)\n';
   //   slideContent += '## #' + item.item_number + '\n';
