@@ -3,14 +3,55 @@
   <head>
     <title>行政執行署 台北分署 拍賣投影片</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reveal/reveal.css">
+    <link rel="stylesheet" href="css/reveal/theme/white.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/reveal/print/pdf.css' : 'css/reveal/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
     <style>
       @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-      body { font-family: 'Noto Sans TC', sans-serif; }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-
+      body { font-family: 'Noto Sans TC', sans-serif !important; }
+      
       .remark-slide-number {
         display: none;
+      }
+
+      .slides > section {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 0 !important;
+      }
+
+      img {
+        border: none !important;
+      }
+
+      .promo {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+      }
+
+      .reveal section.promo img {
+        margin-top: 70px;
+        margin-bottom: 30px;
+      }
+
+      .reveal section img {
+        box-shadow: none;
+      }
+
+      .promo h1 {
+        font-size: 55px;
+        margin-bottom: 42px;
       }
 
       .promo h2 {
@@ -20,29 +61,47 @@
         text-align: center;
         padding: 15px 36px;
         border-radius: 50px;
+        font-size: 45px;
       }
 
-      .opening img {
-        width: 300px;
-        height: 300px;
+      .reveal section.opening img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .opening > .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
       }
 
       .opening h1 {
         background-color: rgb(30,30,30);
-        padding: 10px 20px;
+        padding: 15px 30px;
         box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
         color: white;     
-        display: inline;
+        font-size: 55px;
+        margin-bottom: 30px;
       }
 
       .opening h2 {
-        margin-bottom: 18px;   
+        font-size: 55px;
+        margin-bottom: 10px;
         margin-top: 4px;
       }
 
       .closing {
         background-color: rgb(30,30,30);
         color: white;
+      }
+
+      .closing h1 {
+        color: white;
+        font-size: 55px;
+        margin-top: 250px;
+        margin-bottom: 40px;
       }
 
       .closing h2 {
@@ -52,12 +111,13 @@
         box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
         margin-left: auto;
         margin-right: auto;
-        color: white;     
+        color: white;  
+        font-size: 45px;   
       }
 
       .auction-theme {
         padding: 0;
-        background-size: contain;
+        background-size: cover;
         background-position: top;
       }
 
@@ -70,6 +130,7 @@
         color: black;
         float: left;
         box-shadow: 0px 3px 5px rgba(0,0,0,0.15);
+        font-size: 45px;
       }
 
       .auction-theme h3 {
@@ -107,14 +168,16 @@
       }
     </style>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    <script src="js/reveal.js">
     </script>
     <script src="js/main.js">
     </script>
     
   </head>
   <body>
-    <textarea id="source">
-    </textarea>
+    <div class="reveal">
+      <div class="slides">
+      </div>
+    </div>
   </body>
 </html>
