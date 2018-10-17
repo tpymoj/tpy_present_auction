@@ -1200,17 +1200,23 @@ var promoSlide =
     '<h2>facebook.com/tpymoj</h2>&nbsp;' +
   '</section>';
 
-  var openingSlide = 
-    '<section class="opening" data-transition="none">' +
-      '<img src="img/logo-85.png" /> <br/>' +
-      '<h1>107檢助執字1號拍賣</h1>&nbsp;' +
-    '</section>';
-
-  var closingSlide = 
-  '<section class="closing" data-transition="none">' +
-    '<h1>107檢助執字1號拍賣</h1>' +
-    '<h2>拍賣結束</h2>&nbsp;' +
+var openingSlide = 
+  '<section class="opening" data-transition="none">' +
+    '<div class="flex">' +
+    // '<div>' +
+    '<h1>變賣超跑女神收藏名牌女鞋</h1>' +
+    '<h2>13:50 ~ 14:20 公開閱覽</h2>' +
+    '<h2>14:30 開始變賣</h2>' +
+    // '</div>' +
+    // '<img src="img/logo-85.png" />' +
+    '</div>' +
   '</section>';
+
+var closingSlide = 
+'<section class="closing" data-transition="none">' +
+  '<h1>107檢助執字1號拍賣</h1>' +
+  '<h2>拍賣結束</h2>&nbsp;' +
+'</section>';
 
 var contentSlides = '';
 
