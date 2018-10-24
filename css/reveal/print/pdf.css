@@ -80,7 +80,7 @@ ul, ol, div, p {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-
+	height: 727px !important;
 	page-break-after: always;
 }
 
