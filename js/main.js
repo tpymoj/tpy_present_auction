@@ -1189,12 +1189,12 @@ var auction_items = [
   }
 ];
 
-var promoSlide = 
-  '<section class="promo" data-transition="none">' +
-    '<img src="img/tpymoj-qr.svg" />' +
-    '<h1>#掌握最新法拍消息</h1>' +
-    '<h2>facebook.com/tpymoj</h2>&nbsp;' +
-  '</section>';
+// var promoSlide = 
+//   '<section class="promo" data-transition="none">' +
+//     '<img src="img/tpymoj-qr.svg" />' +
+//     '<h1>#掌握最新法拍消息</h1>' +
+//     '<h2>facebook.com/tpymoj</h2>&nbsp;' +
+//   '</section>';
 
 var openingSlide = 
   '<section class="opening" data-transition="none">' +
@@ -1236,7 +1236,7 @@ var contentSlides = '';
   // slideContent += "class: center middle closing\n#107檢助執字1號拍賣\n##拍賣結束\n";
 
   $('document').ready(function(){
-    $('.slides').html(promoSlide + openingSlide + contentSlides + closingSlide);
+    $('.slides').html(openingSlide + contentSlides + closingSlide);
     Reveal.initialize();
   })
 
