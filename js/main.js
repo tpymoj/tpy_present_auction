@@ -400,7 +400,8 @@ var contentSlides = '';
   // slideContent += "class: center middle closing\n#107檢助執字1號拍賣\n##拍賣結束\n";
 
   $('document').ready(function(){
-    $('.slides').html(openingSlide + contentSlides + closingSlide);
+    // $('.slides').html(openingSlide + contentSlides + closingSlide);
+    $('.slides').html(contentSlides);
     Reveal.initialize();
   })
 
