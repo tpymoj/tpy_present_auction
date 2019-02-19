@@ -1,0 +1,9 @@
+#import {
+    display: flex;
+    flex-direction: row;
+}
+
+#import > div {
+    display: flex;
+    flex: 1;
+}
